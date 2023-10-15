@@ -26,14 +26,13 @@ let listofSigns = "";
 function randomSign(list){
     return list[Math.floor( Math.random() *  list.length)];
 }
-
 for (let j = 0; j < 4; j++){
     for (let k = 0; k < minOccurence; k++){
     listofSigns = listofSigns + randomSign(characters[j]);
     }
 }
 while (listofSigns.length <= passwordLength) {
-    listofSigns = listofSigns + randomSign(characters.join());
+    listofSigns = listofSigns + randomSign(characters.join("")); 
 }
 for (let m = passwordLength; m > 0; m--) {
     rand = randomSign(listofSigns);
