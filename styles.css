@@ -1,0 +1,125 @@
+.icon {
+    width: 50px;
+    height: 50px;
+
+}
+
+.slogan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+    height: calc(100vh);
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+    padding-top: 50px;
+}
+.textSlogan {
+    max-width: 300px;
+    text-align: justify;
+    /* padding-top: 130px; */
+}
+.photoSlogan {
+    width: 300px;
+    height: 300px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px 30px 30px;
+    position: fixed;
+    top: 0;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+main {
+    margin: 0 20px;
+}
+
+.header1and2, .header3and4 {
+    display: flex;
+    align-items: center;
+
+}
+.header3and4 a {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.615);
+    color: black;
+}
+.header3and4 {
+    margin-right: 30px;
+
+}
+header * {
+    margin: 0 5px;
+}
+
+body {
+    margin: 0px;
+
+}
+
+.header1 {
+    display: flex;
+    align-items: center;
+}
+
+.sectionIimage {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+}
+
+#section1 {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: 100px; */
+    flex-wrap: wrap;
+    align-content: 50px;
+    padding: 110px 0;
+    border-top: 2px solid black;
+}
+
+#section2 {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: 210px; */
+    padding-top: 110px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 310px);
+    align-content: space-evenly;
+    border-top: 2px solid black;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightgray;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    height: 200px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.price__item {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    max-width: 120%;
+    min-width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 120%;
+    gap: 10px;
+}
