@@ -1,6 +1,5 @@
 const photos = document.querySelectorAll(".sectionIimage");
 const imageId = document.querySelectorAll("#section1 img");
-console.log(imageId);
 const newCard = document.createElement("div");
 const newCard2 = document.createElement("div");
 const box = document.createElement("div");
@@ -70,4 +69,14 @@ function openBasket() {
             newCard2.innerHTML += localStorage.key(item);
         }
     }
+}
+
+import { fetchPhotos } from "./photos.js";
+const album = fetchPhotos();
+console.log(album);
+for (const item of album) {
+    const gallery = document.querySelector("#section1")
+    const addPhoto = document.createElement("img");
+    addPhoto.setAttribute("src", item.url);
+    gallery.appendChild(addPhoto);
 }
